@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Now | Tienda Oficial</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        Descubre nuestra nueva colección | Envíos gratis por compras superiores a S/200.00
+    </div>
+
+    <header class="main-header">
+
+        <div class="header-container">
+
+            <div class="logo" onclick="mostrarSeccion('home')" style="cursor:pointer;">
+                <img src="https://beauty-now.com.ar/wp-content/uploads/2026/03/Logo-Beauty-Now_Beauty-Now-1.png">
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="¿Qué buscas hoy?">
+            </div>
+
+            <nav class="nav">
+                <a href="#" onclick="mostrarSeccion('home')">Inicio</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Tiendas</a>
+                <a href="#" class="active">Nueva Colección</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div id="main-home">
+
+        <section class="slider-container">
+
+            <div class="slider" id="mainSlider">
+
+                <div class="slide">
+                    <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/d723cb34-3b69-48e3-860f-b125a51838da___65dbb49acf132792d51bf13bd04258e4.jpg" alt="Banner 1">
+                </div>
+
+                <div class="slide">
+                    <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/712f9f2e-ea37-4901-b000-3e9535d76a90___17953c2e730af93e39ea02bdc9d52061.jpeg" alt="Banner 2">
+                </div>
+
+            </div>
+
+            <button class="slider-btn prev" id="btnPrev">&#10094;</button>
+            <button class="slider-btn next" id="btnNext">&#10095;</button>
+
+        </section>
+
+        <section class="categories">
+
+            <p class="label">ELIJE UNA CATEGORÍA</p>
+
+            <div class="cat-grid">
+
+                <div class="cat-item" onclick="mostrarSeccion('brochas')" style="cursor:pointer;">
+
+                    <div class="circle">
+                        <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/5c0c38d6-2a59-4fdd-a45d-87df7c1100c2___03f8d6624e6a6036734c370c8306aa70.png" alt="Brochas">
+                    </div>
+
+                    <p>Brochas y Esponjas</p>
+
+                </div>
+
+                <div class="cat-item" onclick="mostrarSeccion('maquillaje')" style="cursor:pointer;">
+
+                    <div class="circle">
+                        <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/f4c42967-7e51-422e-909f-5f27c48d2268___18aca88872fd19e393bee2f66cc8d495.png" alt="Maquillaje">
+                    </div>
+
+                    <p>Maquillaje</p>
+
+                </div>
+
+                <div class="cat-item" onclick="mostrarSeccion('accesorios')" style="cursor:pointer;">
+
+                    <div class="circle">
+                        <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/d3057e86-ca40-47a0-af34-ceb6df6eab6c___7652484894d82d2c373783fc5b8820f5.png" alt="Accesorios">
+                    </div>
+
+                    <p>Accesorios</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="products">
+
+            <div class="p-header">
+                <p class="sub">¡LOS MEJORES PRECIOS!</p>
+                <h2>DESCUBRE NUESTRAS OFERTAS</h2>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="p-card">
+                    <span class="tag">OFERTA</span>
+                    <img src="https://b2ctrendy.vtexassets.com/arquivos/ids/159426-500-auto">
+                    <h4>Base Mousse Trendy</h4>
+                    <p class="price">
+                        <span class="old">S/25.00</span>
+                        S/10.00
+                    </p>
+                    <button class="cart-btn">Agregar al carrito</button>
+                </div>
+
+                <div class="p-card">
+                    <span class="tag">OFERTA</span>
+                    <img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163434-500-auto">
+                    <h4>Iluminador Barbie</h4>
+                    <p class="price">
+                        <span class="old">S/35.00</span>
+                        S/18.00
+                    </p>
+                    <button class="cart-btn">Agregar al carrito</button>
+                </div>
+
+                <div class="p-card">
+                    <span class="tag">OFERTA</span>
+                    <img src="https://b2ctrendy.vtexassets.com/arquivos/ids/159770-500-auto">
+                    <h4>Base Truly Matte</h4>
+                    <p class="price">
+                        <span class="old">S/35.00</span>
+                        S/18.00
+                    </p>
+                    <button class="cart-btn">Agregar al carrito</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="products new-launches">
+
+            <div class="p-header">
+                <p class="sub">¡ÚLTIMOS LANZAMIENTOS!</p>
+                <h2>CONOCE AQUÍ LO NUEVO</h2>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="p-card">
+                    <span class="tag pink">NUEVO</span>
+                    <img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163423-500-auto">
+                    <h4>Corrector Rosado Barbie</h4>
+                    <p class="price">S/15.00</p>
+                    <button class="cart-btn">Agregar al carrito</button>
+                </div>
+
+                <div class="p-card">
+                    <span class="tag pink">NUEVO</span>
+                    <img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163433-500-auto">
+                    <h4>Iluminador Trío Barbie</h4>
+                    <p class="price">S/15.00</p>
+                    <button class="cart-btn">Agregar al carrito</button>
+                </div>
+
+                <div class="p-card">
+                    <span class="tag pink">NUEVO</span>
+                    <img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163442-500-auto">
+                    <h4>Esponja Dúo Barbie</h4>
+                    <p class="price">S/15.00</p>
+                    <button class="cart-btn">Agregar al carrito</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <div id="main-brochas" style="display:none;">
+
+        <div class="banner-web-container">
+            <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/09525df0-af4f-4316-b5fb-bd71ea6a29ad___1d6137ff0e9685410f9371ab3de2d63a.jpg" class="banner-img-web">
+        </div>
+
+        <section class="sub-categories-circles">
+            <div class="sub-cat-container">
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/5e23946e-f056-4f63-86a4-b34d64921a6c___094ba0e9a5e28419a97f2ad3cd5a6de6.png"></div>
+                    <p>Individuales</p>
+                </div>
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/339e9c0c-73bf-4974-a49c-36649bcb9ce1___ece3827214aa0cffd15a2d33f22da732.png"></div>
+                    <p>Esponjas</p>
+                </div>
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/72b0f797-81d0-404d-9e4c-a2f25ca67b19___42589422a5e38bcf40417925c3be3cb0.png"></div>
+                    <p>Kits</p>
+                </div>
+            </div>
+            <div class="middle-text">
+                <p class="pink-sub">¡EL COMPLEMENTO IDEAL PARA TU MAQUILLAJE!</p>
+                <h2>DESCUBRE NUESTRA COLECCION</h2>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product-grid">
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163443-500-auto"><p>S/15.00</p><h4>Esponja Dúo Barbie</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163361-500-auto"><p>S/25.00</p><h4>Kit Brochas Piel Luxe</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/160254-500-auto"><p>S/18.00</p><h4>Kit Brochas Cejas</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://aruma.vtexassets.com/arquivos/ids/162015-300-300"><p>S/15.00</p><h4>Set Cejas y ojos</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://aruma.vtexassets.com/arquivos/ids/214027-300-300"><p>S/10.00</p><h4>Esponja de maquillaje</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://aruma.vtexassets.com/arquivos/ids/173440-300-300"><p>S/18.00</p><h4>Set Glam Esponjas</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://aruma.vtexassets.com/arquivos/ids/161990-300-300"><p>S/18.00</p><h4>Brocha para Base</h4><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://aruma.vtexassets.com/arquivos/ids/162016-300-300"><p>S/35.00</p><h4>Set Profesional de Brochas</h4><button class="cart-btn">Agregar al carrito</button></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="main-maquillaje" style="display:none;">
+        <div class="banner-web-container">
+            <!-- SE AGREGÓ LA CLASE banner-img-web PARA CORREGIR EL TAMAÑO -->
+            <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/db784933-8098-46bb-b2f7-60e695af4971___0e87fe638d911d9786f8798ad4e70e3f.jpg" class="banner-img-web">
+        </div>
+
+        <section class="sub-categories-circles">
+            <div class="sub-cat-container">
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/4499b57b-754e-4e77-a5de-99d8b387f191___86bb119c1a5a7cb02718c0283b596c40.png"></div>
+                    <p>Rostro</p>
+                </div>
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/5bfa3740-f900-4f28-baea-47dd438ed1fa___7f4aedb8cef72eb9d2fa5c713c552243.png"></div>
+                    <p>Ojos</p>
+                </div>
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/0aa2ace9-d453-4d2e-9371-1e78c21a712c___d9666c1f96676e9823da07a63c408829.png"></div>
+                    <p>Labios</p>
+                </div>
+                 <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/f935289c-18e6-4647-a6d6-3c52ae7afc79___fa6a499513079db20a49d455a99b42e9.png"></div>
+                    <p>Cejas</p>
+                </div>
+            </div>
+            <div class="middle-text">
+                <p class="pink-sub">¡RESALTA TU BELLEZA NATURAL!</p>
+                <h2>TODO EN MAQUILLAJE</h2>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product-grid">
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/161688-500-auto?v=639092732168170000&width=500&height=auto&aspect=true"><h4>Brillo de Labios Aura</h4><p class="price">S/10.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/161822-500-auto?v=639125707174730000&width=500&height=auto&aspect=true"><h4>Brillo Retro Kisses</h4><p class="price">S/18.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/160023-500-auto?v=638774131142630000&width=500&height=auto&aspect=true"><h4>Rubor Y Labial Velvet</h4><p class="price">S/18.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/161967-500-auto?v=638962247163730000&width=500&height=auto&aspect=true"><h4>Lip Brilla Labial</h4><p class="price">S/15.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/159865-500-auto?v=638774098391830000&width=500&height=auto&aspect=true"><h4>Kit de Cejas Ref</h4><p class="price">S/15.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163407-500-auto?v=639125570265200000&width=500&height=auto&aspect=true"><h4>Lapiz de Cejas Dreams</h4><p class="price">S/12.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/163281-500-auto?v=639081563470770000&width=500&height=auto&aspect=true"><h4>Kit de cejas Brows</h4><p class="price">S/14.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/160877-500-auto?v=638796461919200000&width=500&height=auto&aspect=true"><h4>Corrector Doble</h4><p class="price">S/30.00</p><button class="cart-btn">Agregar al carrito</button></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="main-accesorios" style="display:none;">
+        <div class="banner-web-container">
+            <img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/2a8ac858-19c9-49f5-a6bf-6fa6c370b87b___84f2360c22b7042bd8ac75b5f46b1341.jpg" class="banner-img-web">
+        </div>
+
+        <section class="sub-categories-circles">
+            <div class="sub-cat-container">
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/9cb33ede-c1c9-4c93-b0af-caeaba5ada88___d5163bd60739b747b82b1acae783c53e.png"></div>
+                    <p>Cosmetiqueras</p>
+                </div>
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/b131327c-6898-4585-8d86-9486a89019d2___3c19327da47a376f40f9c4fc6abb70cd.png"></div>
+                    <p>Bolsos y Monederos</p>
+                </div>
+                <div class="sub-cat-item">
+                    <div class="circle-sm"><img src="https://b2ctrendy.vtexassets.com/assets/vtex.file-manager-graphql/images/2fa57ffe-8215-40f2-87fc-5abb2a838958___0abf1c8ddfd90a5b27d3d7ca1debf560.png"></div>
+                    <p>Espejos</p>
+                </div>
+            </div>
+            <div class="middle-text">
+                <p class="pink-sub">EL TOQUE FINAL PARA TU LOOK</p>
+                <h2>ACCESORIOS IMPRESCINDIBLES</h2>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product-grid">
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/160372-500-auto?v=638775051027770000&width=500&height=auto&aspect=true"><h4>Cosmetiquera Trendy</h4><p class="price">S/20.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://i5.walmartimages.com/asr/878226dd-6f2b-459f-9263-122715651a86.68a4cf3d9dd4a9b802acaa55106e2313.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"><h4>Espejo de Mano</h4><p class="price">S/15.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/160115-500-auto?v=638774722872970000&width=500&height=auto&aspect=true"><h4>Libreta Emprendedora</h4><p class="price">S/12.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/157661-500-auto?v=638633336859370000&width=500&height=auto&aspect=true"><h4>Kit Piedritas de Cristal</h4><p class="price">S/10.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/157664-500-auto?v=638633336867830000&width=500&height=auto&aspect=true"><h4>Lapiz de Silicona para pegar Piedritas</h4><p class="price">S/25.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/156250-500-auto?v=638919875621470000&width=500&height=auto&aspect=true"><h4>Bolsa Mediana Trendy</h4><p class="price">S/18.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/162626-500-auto?v=639012392937130000&width=500&height=auto&aspect=true"><h4>Papeletas Antigrasa</h4><p class="price">S/8.00</p><button class="cart-btn">Agregar al carrito</button></div>
+                <div class="p-card"><img src="https://b2ctrendy.vtexassets.com/arquivos/ids/157704-500-auto?v=638633337150100000&width=500&height=auto&aspect=true"><h4>Maleta Mediana de Maquillaje </h4><p class="price">S/12.00</p><button class="cart-btn">Agregar al carrito</button></div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function mostrarSeccion(seccion){
+            const home = document.getElementById('main-home');
+            const brochas = document.getElementById('main-brochas');
+            const maquillaje = document.getElementById('main-maquillaje');
+            const accesorios = document.getElementById('main-accesorios');
+
+            home.style.display = 'none';
+            brochas.style.display = 'none';
+            maquillaje.style.display = 'none';
+            accesorios.style.display = 'none';
+
+            if(seccion === 'brochas'){ brochas.style.display = 'block'; }
+            else if(seccion === 'maquillaje'){ maquillaje.style.display = 'block'; }
+            else if(seccion === 'accesorios'){ accesorios.style.display = 'block'; }
+            else{ home.style.display = 'block'; }
+
+            window.scrollTo(0,0);
+        }
+
+        const slider = document.getElementById('mainSlider');
+        let index = 0;
+        function updateSlider(){ slider.style.transform = `translateX(-${index * 50}%)`; }
+        document.getElementById('btnNext').addEventListener('click', () => { index = (index === 1) ? 0 : 1; updateSlider(); });
+        document.getElementById('btnPrev').addEventListener('click', () => { index = (index === 0) ? 1 : 0; updateSlider(); });
+        setInterval(() => { if(document.getElementById('main-home').style.display !== 'none'){ index = (index === 1) ? 0 : 1; updateSlider(); } }, 5000);
+    </script>
+
+</body>
+</html>

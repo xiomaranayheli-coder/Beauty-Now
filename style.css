@@ -1,0 +1,424 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color:#fff;
+    overflow-x:hidden;
+}
+
+/* TOP BAR */
+.top-bar{
+    background:#f1c3d1;
+    color:white;
+    text-align:center;
+    padding:8px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* HEADER - CORREGIDO PARA RESPONSIVE */
+.main-header{
+    position:sticky;
+    top:0;
+    background:white;
+    z-index:1000;
+    padding:15px 5%;
+    border-bottom:1px solid #eee;
+}
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+    gap:20px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en móvil */
+}
+
+.logo img{
+    height:45px;
+}
+
+.search-box {
+    flex: 1; /* El buscador toma el espacio disponible */
+    min-width: 200px;
+}
+
+.search-box input{
+    padding:10px 20px;
+    border-radius:20px;
+    border:1px solid #ddd;
+    width:100%; /* Ahora es relativo al contenedor */
+    max-width: 350px;
+    background:#f8f8f8;
+    outline:none;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+}
+
+.nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    font-size:14px;
+    transition:0.3s;
+    white-space: nowrap;
+}
+
+.nav a:hover{
+    color:#d63384;
+}
+
+.active{
+    color:#d63384 !important;
+    border-bottom:2px solid #d63384;
+    padding-bottom:3px;
+}
+
+/* SLIDER - CORRECCIÓN DE ALTURA ADAPTABLE */
+.slider-container{
+    position:relative;
+    width:100%;
+    height: auto; /* IMPORTANTE: Quitamos la altura fija de 450px */
+    overflow:hidden;
+}
+
+.slider{
+    display:flex;
+    width:200%;
+    height:100%;
+    transition:transform 0.6s ease-in-out;
+}
+
+.slide{
+    width:50%;
+    height:100%;
+}
+
+.slide img{
+    width:100%;
+    height: auto; /* La imagen define la altura proporcionalmente */
+    display: block;
+    object-fit:cover;
+}
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(255,255,255,0.8);
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    color:#d63384;
+    font-size:18px;
+    font-weight:bold;
+    z-index:10;
+    transition:0.3s;
+}
+
+.slider-btn:hover{
+    background:#d63384;
+    color:white;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+/* CATEGORIAS */
+.categories{
+    text-align:center;
+    padding:50px 0;
+}
+
+.label{
+    letter-spacing:2px;
+    color:#888;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.cat-grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.cat-item{
+    transition:0.3s;
+}
+
+.cat-item:hover{
+    transform:translateY(-5px);
+}
+
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid #f1c3d1;
+    transition:0.3s;
+    margin-bottom:10px;
+}
+
+.circle:hover{
+    transform:scale(1.08);
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* BANNER BROCHAS */
+.banner-web-container{
+    width:100%;
+}
+
+.banner-img-web{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* SUBCATEGORIAS */
+.sub-categories-circles{
+    text-align:center;
+    padding:40px 0;
+}
+
+.sub-cat-container{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.circle-sm{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    overflow:hidden;
+    border:1px solid #f8acc4;
+    transition:0.3s;
+}
+
+.circle-sm:hover{
+    transform:scale(1.08);
+}
+
+.circle-sm img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.sub-cat-item p{
+    margin-top:10px;
+    font-weight:600;
+}
+
+.pink-sub{
+    color:#d63384;
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.middle-text h2{
+    font-size:40px;
+}
+
+/* PRODUCTOS */
+.products{
+    padding:40px 10%;
+}
+
+.p-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sub{
+    color:#d63384;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.p-header h2{
+    font-size:35px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:30px auto 0;
+}
+
+.p-card{
+    border:1px solid #eee;
+    padding:15px;
+    text-align:center;
+    border-radius:15px;
+    position:relative;
+    background:white;
+    transition:0.3s ease;
+}
+
+.p-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.p-card img{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.p-card h4{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.price{
+    color:#d63384;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.old{
+    text-decoration:line-through;
+    color:#bbb;
+    font-size:14px;
+    margin-right:8px;
+}
+
+.tag{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#ffcc00;
+    color:white;
+    padding:5px 10px;
+    font-size:10px;
+    font-weight:bold;
+    border-radius:4px;
+}
+
+.pink{
+    background:#d63384;
+}
+
+.cart-btn{
+    width:100%;
+    padding:12px;
+    background:#d63384;
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.cart-btn:hover{
+    background:#b81f6b;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .header-container{
+        flex-direction:column;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        max-width: 100%;
+    }
+
+    .nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav a{
+        margin:10px;
+    }
+
+    .middle-text h2{
+        font-size:28px;
+    }
+
+    .p-header h2{
+        font-size:28px;
+    }
+
+    .products{
+        padding:40px 5%;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .circle{
+        width:120px;
+        height:120px;
+    }
+
+    .middle-text h2{
+        font-size:22px;
+    }
+
+    .p-header h2{
+        font-size:22px;
+    }
+
+    /* Mostrar 2 productos por fila en móviles para que no se vea vacío */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .p-card img {
+        height: 150px;
+    }
+
+    .p-card h4 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
